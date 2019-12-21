@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <div class="container">
         <Header />
-        <nuxt />
+        <nuxt class="contents" />
     </div>
 </template>
 
@@ -15,4 +15,11 @@ import Header from "~/components/Header.vue";
 export default class extends Vue {}
 </script>
 
-<style scoped lang="stylus"></style>
+<style scoped lang="stylus">
+.container
+    .contents
+        max-width 1100px
+        margin 0 auto
+        margin-top 50px
+        padding-bottom 40px
+</style>

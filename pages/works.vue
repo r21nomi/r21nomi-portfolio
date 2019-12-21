@@ -33,5 +33,9 @@ export default class WorksPage extends Vue {
 
 .worksPage
     .workContainer
-        margin-top 20px
+        margin-top 50px
+
+        .workItem
+            &:nth-child(n + 2)
+                margin-top 60px
 </style>

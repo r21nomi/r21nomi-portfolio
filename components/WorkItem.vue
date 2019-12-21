@@ -1,5 +1,5 @@
 <template>
-    <div class="work">
+    <div class="workItem">
         <a class="thumb" :href="work.link" target="_blank">
             <img :src="work.image" alt="" />
         </a>
@@ -25,7 +25,7 @@ export default class WorkItem extends Vue {
 <style scoped lang="stylus">
 @require '~@/assets/style/variables'
 
-.work
+.workItem
     .thumb
         display block
         img

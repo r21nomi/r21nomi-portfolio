@@ -7,6 +7,38 @@
             "date": "2019/09",
             "description": "A tutorial on how to create a Three.js powered audio visualizer that takes input from the user's webcam.",
             "link": "https://tympanus.net/codrops/2019/09/06/how-to-create-a-webcam-audio-visualizer-with-three-js"
+        },
+        {
+            "title": "Daily Creative Coding",
+            "image": "img/daily_creative_coding.jpg",
+            "video": "",
+            "date": "2019/09",
+            "description": "Small digital art pieces I create almost every day.",
+            "link": "https://neort.io/9Bqy2IWae5gAXfMSM4cHStP2dxP2"
+        },
+        {
+            "title": "Tiny Digital Frame",
+            "image": "img/tiny_digital_frame.jpg",
+            "video": "",
+            "date": "2018/08",
+            "description": "Tiny digital frame which show generative art mode with GLSL on Raspberry PI.",
+            "link": ""
+        },
+        {
+            "title": "PATTERNBRELLA",
+            "image": "img/patternbrella.jpg",
+            "video": "https://www.youtube.com/watch?v=rXw-gmfmxfM",
+            "date": "2016/09",
+            "description": "A presentation of new umbrella to make people happy in rainy situation. This is the artwork of BaPA 3rd.",
+            "link": "https://www.youtube.com/watch?v=rXw-gmfmxfM"
+        },
+        {
+            "title": "Touch The Nature",
+            "image": "img/touch_the_nature.jpg",
+            "video": "https://vimeo.com/162671072",
+            "date": "2015/08",
+            "description": "Installation which display the lights by touching the plant.",
+            "link": "https://vimeo.com/162671072"
         }
     ]
 }
