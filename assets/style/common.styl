@@ -10,9 +10,18 @@ body
     font-size: 1.4rem
     color $black_000
 
-ul, li, h1, h2, h3, p, a
+html, body, ul, li, h1, h2, h3, p, a
     padding 0
     margin 0
 
 ul
     list-style none
+
+a
+    color $black_000
+    text-decoration none
+    -webkit-tap-highlight-color $transparent
+    tap-highlight-color $transparent
+
+    &:hover
+        opacity: 0.75

@@ -1,49 +1,18 @@
 <template>
     <div>
+        <Header />
         <nuxt />
     </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "nuxt-property-decorator";
+import Header from "~/components/Header.vue";
 
 @Component({
-    components: {}
+    components: { Header }
 })
-export default class extends Vue {
-    mounted() {
-        console.log("mounted!!!!!");
-    }
-}
+export default class extends Vue {}
 </script>
 
-<style lang="stylus">
-@require '~@/assets/style/common'
-</style>
-
-<style scoped lang="stylus">
-.button--green
-    display inline-block
-    border-radius 4px
-    border 1px solid #3b8070
-    color #3b8070
-    text-decoration none
-    padding 10px 30px
-
-.button--green:hover
-    color #fff
-    background-color #3b8070
-
-.button--grey
-    display inline-block
-    border-radius 4px
-    border 1px solid #35495e
-    color #35495e
-    text-decoration none
-    padding 10px 30px
-    margin-left 15px
-
-.button--grey:hover
-    color #fff
-    background-color #35495e
-</style>
+<style scoped lang="stylus"></style>
