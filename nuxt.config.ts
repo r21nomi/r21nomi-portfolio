@@ -23,7 +23,7 @@ export default {
     css: ["@/assets/style/common.styl"],
     plugins: [],
     buildModules: ["@nuxtjs/eslint-module", "@nuxt/typescript-build"],
-    modules: [],
+    modules: ["@nuxtjs/axios"],
     build: {
         extend(config: any, ctx: any) {
             // Run ESLint on save

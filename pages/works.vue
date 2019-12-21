@@ -4,7 +4,7 @@
 
         <div class="workContainer">
             <WorkItem
-                v-for="(work, index) in works.private"
+                v-for="(work, index) in privateWorks"
                 :key="index"
                 :work="work"
             />
@@ -22,22 +22,8 @@ import PageTitle from "~/components/PageTitle.vue";
     components: { PageTitle, WorkItem }
 })
 export default class WorksPage extends Vue {
-    async asyncData() {
-        const url: string = `${process.env.BASE_URL}json/works.json`;
-        let works: Work[] = [];
-
-        await fetch(url)
-            .then((response: Response) => {
-                return response.json();
-            })
-            .then((json: Work[]) => {
-                works = json;
-            })
-            .catch((error: any) => {
-                console.log(error);
-            });
-
-        return { works };
+    private get privateWorks(): Work[] {
+        return this.$store.state.works.private;
     }
 }
 </script>
