@@ -25,12 +25,13 @@ export default class Header extends Vue {}
 .header
     display flex
     padding 20px
-.logo
-    flex 1
-.menu
-    display flex
 
-    .menuItem
-        &:nth-child(n + 2)
-            margin-left 20px
+    .logo
+        flex 1
+    .menu
+        display flex
+
+        .menuItem
+            &:nth-child(n + 2)
+                margin-left 20px
 </style>

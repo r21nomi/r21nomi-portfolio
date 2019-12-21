@@ -1,0 +1,12 @@
+{
+    "private": [
+        {
+            "title": "Webcam Audio Visualizer",
+            "image": "img/webcam_audio_visualizer.jpg",
+            "video": "",
+            "date": "2019/09",
+            "description": "A tutorial on how to create a Three.js powered audio visualizer that takes input from the user's webcam.",
+            "link": "https://tympanus.net/codrops/2019/09/06/how-to-create-a-webcam-audio-visualizer-with-three-js"
+        }
+    ]
+}
