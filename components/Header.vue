@@ -1,7 +1,9 @@
 <template>
     <div class="header">
         <div class="logo">
-            <n-link to="/">ryotatakemoto.com</n-link>
+            <n-link to="/">
+                <img src="/img/icon.png" alt="ryotatakemoto.com" />
+            </n-link>
         </div>
         <ul class="menu">
             <li class="menuItem"><n-link to="/works">Works</n-link></li>
@@ -27,11 +29,21 @@ export default class Header extends Vue {}
     padding 20px
 
     .logo
-        flex 1
+        a
+            width 50px
+            height 50px
+            display block
+
+            img
+                display block
+                width 100%
+                height 100%
+                border-radius 50%
+
     .menu
         display flex
+        align-items center
 
         .menuItem
-            &:nth-child(n + 2)
-                margin-left 20px
+            margin-left 20px
 </style>
