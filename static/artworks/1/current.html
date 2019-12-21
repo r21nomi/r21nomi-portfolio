@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>NEORT</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
+        <style type="text/css">html {
+    overflow: hidden;
+    position: fixed;
+}</style>
+    </head>
+    <body style="" data-hasqtip="0">
+    <noscript>
+        <strong>We're sorry but NEORT doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <script type="text/javascript">window.alert=function(){};window.confirm=function(){};window.prompt=function(){};</script>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.min.js"></script>
+    <script type="text/javascript">let movers = [];
+const moversNum = 1600;
+let timer;
+let refreshTimeMS = 30 * 1000;
+const strokeColors = [
+    {
+        r: 255,
+        g: 255,
+        b: 255
+    },
+    {
+        r: 245,
+        g: 245,
+        b: 245
+    },
+    {
+        r: 0,
+        g: 140,
+        b: 255
+    },
+    {
+        r: 255,
+        g: 0,
+        b: 60
+    }
+];
+const backgroundColor = {
+    r: 0,
+    g: 165,
+    b: 225
+};
+
+function setup() {
+    createCanvas(windowWidth, windowHeight);
+    init();
+}
+
+function draw() {
+    background(backgroundColor.r, backgroundColor.g, backgroundColor.b, 4);
+
+    for (let m of movers) {
+        m.update();
+        m.draw();
+    }
+}
+
+const init = () => {
+    background(backgroundColor.r, backgroundColor.g, backgroundColor.b);
+
+    if (timer) {
+        clearTimeout(timer);
+    }
+    timer = setTimeout(() => {
+        init();
+    }, refreshTimeMS);
+
+    movers = [];
+
+    for (let i = 0; i < moversNum; i++) {
+        movers.push(new Mover());
+    }
+};
+
+function windowResized(){
+	resizeCanvas(windowWidth, windowHeight);
+    init();
+}
+
+class Mover {
+    constructor() {
+        this.pos = createVector(random(width), random(height));
+        this.oldPos = createVector(this.pos.x, this.pos.y);
+        this.speed = 1.1;
+        this.step = random(0.2, this.speed);
+        this.nScale = 300;
+        this.nSize = 14;
+        this.strokeSize = random(0.1, 2.8);
+        this.strokeColor = strokeColors[floor(random() * strokeColors.length)];
+    }
+
+    update() {
+        let angle = noise(this.pos.x / this.nScale, this.pos.y / this.nScale) * this.nSize;
+        this.pos.add(
+            cos(angle) * this.step,
+            sin(angle) * this.step
+        );
+
+        let isOut = this.pos.x < 0 || this.pos.x > width || this.pos.y < 0 || this.pos.y > height;
+        if (isOut) {
+            this.pos.set(random(width), random(height));
+            this.oldPos.set(this.pos.x, this.pos.y);
+        }
+    }
+
+    draw() {
+        stroke(this.strokeColor.r, this.strokeColor.g, this.strokeColor.b);
+        strokeWeight(this.strokeSize);
+        line(this.oldPos.x, this.oldPos.y, this.pos.x, this.pos.y);
+        this.oldPos.set(this.pos);
+    }
+}</script>
+    </body>
+</html>

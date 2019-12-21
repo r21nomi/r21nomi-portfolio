@@ -6,3 +6,8 @@ export interface Work {
     description: string;
     link: string;
 }
+
+export enum ArtworkType {
+    WEB = "web",
+    VIDEO = "video"
+}
