@@ -140,5 +140,5 @@ export default class AboutPage extends Vue {
                             border-radius 50%
 
                     &:nth-child(n + 2)
-                        margin-left 10px
+                        margin-left 14px
 </style>
