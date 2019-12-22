@@ -1,6 +1,6 @@
 <template>
     <div class="worksPage">
-        <PageTitle title="Works" />
+        <PageTitle title="WORKS" />
 
         <div class="workContainer">
             <WorkItem
