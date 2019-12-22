@@ -43,7 +43,7 @@
                             <img src="img/twitter_icon.png" alt="@r21nomi" />
                         </a>
                     </li>
-                    <li class=" account facebook">
+                    <li class="account facebook">
                         <a
                             href="https://www.facebook.com/r21nomi"
                             target="_blank"
@@ -54,12 +54,20 @@
                             />
                         </a>
                     </li>
-                    <li class=" account neort">
+                    <li class="account neort">
                         <a
                             href="https://neort.io/9Bqy2IWae5gAXfMSM4cHStP2dxP2"
                             target="_blank"
                         >
                             <img src="img/neort_icon.png" alt="r21nomi" />
+                        </a>
+                    </li>
+                    <li class="account email">
+                        <a href="mailto:r21nomi@gmail.com" target="_blank">
+                            <img
+                                src="img/email_icon.png"
+                                alt="r21nomi@gmail.com"
+                            />
                         </a>
                     </li>
                 </ul>
@@ -138,6 +146,17 @@ export default class AboutPage extends Vue {
                             width 100%
                             height 100%
                             border-radius 50%
+
+                    &.email
+                        background-color $black_000
+                        border-radius 50%
+                        text-align center
+
+                        img
+                            width 75%
+                            height 75%
+                            display inline-block
+                            vertical-align middle
 
                     &:nth-child(n + 2)
                         margin-left 14px
