@@ -6,17 +6,26 @@
             </n-link>
         </div>
         <ul class="menu">
-            <li class="menuItem"><n-link to="/works">Works</n-link></li>
-            <li class="menuItem"><n-link to="/about">About</n-link></li>
+            <li class="menuItem">
+                <n-link to="/works">
+                    <TextWithBackground text="WORKS" />
+                </n-link>
+            </li>
+            <li class="menuItem">
+                <n-link to="/about">
+                    <TextWithBackground text="ABOUT" />
+                </n-link>
+            </li>
         </ul>
     </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "nuxt-property-decorator";
+import TextWithBackground from "~/components/TextWithBackground.vue";
 
 @Component({
-    components: {}
+    components: { TextWithBackground }
 })
 export default class Header extends Vue {}
 </script>
@@ -45,5 +54,7 @@ export default class Header extends Vue {}
         align-items center
 
         .menuItem
-            margin-left 20px
+            font-size 1.6rem
+            font-weight $font_weight_bold
+            margin-left 30px
 </style>

@@ -23,7 +23,12 @@ export default {
     css: ["@/assets/style/common.styl"],
     plugins: [],
     buildModules: ["@nuxtjs/eslint-module", "@nuxt/typescript-build"],
-    modules: ["@nuxtjs/axios"],
+    modules: ["@nuxtjs/axios", "nuxt-webfontloader"],
+    webfontloader: {
+        google: {
+            families: ["Noto+Sans+JP:400,700,900&display=swap&subset=japanese"]
+        }
+    },
     build: {
         extend(config: any, ctx: any) {
             // Run ESLint on save

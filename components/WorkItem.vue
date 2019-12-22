@@ -3,19 +3,26 @@
         <a class="thumb" :href="work.link" target="_blank">
             <img :src="work.image" alt="" />
         </a>
-        <p class="title">
-            <a :href="work.link" target="_blank">{{ work.title }}</a>
-        </p>
-        <p class="description">{{ work.description }}</p>
+        <div class="infoContainer">
+            <p class="title">
+                <a :href="work.link" target="_blank">
+                    <TextWithBackground :text="work.title" />
+                </a>
+            </p>
+            <p class="description">
+                {{ work.description }}
+            </p>
+        </div>
     </div>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from "nuxt-property-decorator";
 import { Work } from "~/types/entity";
+import TextWithBackground from "~/components/TextWithBackground.vue";
 
 @Component({
-    components: {}
+    components: { TextWithBackground }
 })
 export default class WorkItem extends Vue {
     @Prop({ required: true }) private work!: Work;
@@ -32,11 +39,16 @@ export default class WorkItem extends Vue {
             width 100%
             display block
 
-    .title
-        font-size 1.6rem
-        margin-top 10px
+    .infoContainer
+        padding-left 10px
+        padding-right 10px
 
-    .description
-        font-size 1.2rem
-        margin-top 4px
+        .title
+            font-size 1.6rem
+            font-weight $font_weight_bold
+            margin-top 10px
+
+        .description
+            font-size 1.2rem
+            margin-top 4px
 </style>
