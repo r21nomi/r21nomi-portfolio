@@ -12,9 +12,17 @@
             "title": "Daily Creative Coding",
             "image": "img/daily_creative_coding.jpg",
             "video": "",
-            "date": "2019/09",
+            "date": "2019/09 ~",
             "description": "Small digital art pieces I create almost every day.",
             "link": "https://neort.io/9Bqy2IWae5gAXfMSM4cHStP2dxP2"
+        },
+        {
+            "title": "NEORT",
+            "image": "img/neort.jpg",
+            "video": "",
+            "date": "2019/02 ~",
+            "description": "NEORT is Digital Art platform I've been developing as CEO / engineer.",
+            "link": "https://neort.io/"
         },
         {
             "title": "Tiny Digital Frame",
@@ -39,6 +47,14 @@
             "date": "2015/08",
             "description": "Installation which display the lights by touching the plant.",
             "link": "https://vimeo.com/162671072"
+        },
+        {
+            "title": "AWA Android",
+            "image": "img/awa.jpg",
+            "video": "",
+            "date": "2015/08 ~ 2018/11",
+            "description": "I had been developing Music streaming service 'AWA' as lead Android developer.",
+            "link": "https://play.google.com/store/apps/details?id=fm.awa.liverpool"
         }
     ]
 }
