@@ -11,12 +11,12 @@
 
         <div class="titleContainer">
             <h1 class="title">
-                <TextWithBackground text="Art & Technology" />
+                <span class="text">Art & Technology</span>
             </h1>
             <p class="subTitle">
-                <TextWithBackground
-                    text="Create variety of artworks using technology."
-                />
+                <span class="text"
+                    >Create variety of artworks using technology.</span
+                >
             </p>
         </div>
     </div>
@@ -25,10 +25,9 @@
 <script lang="ts">
 import { Component, Vue } from "nuxt-property-decorator";
 import { ArtworkType } from "~/types/entity";
-import TextWithBackground from "~/components/TextWithBackground.vue";
 
 @Component({
-    components: { TextWithBackground }
+    components: {}
 })
 export default class TopPage extends Vue {
     private TIMER_DURATION = 60000;
@@ -96,4 +95,9 @@ export default class TopPage extends Vue {
         .subTitle
             font-size 1.4rem
             margin-top 10px
+
+        .text
+            color $white_fff
+            background-color $black_000
+            padding 0 6px
 </style>
