@@ -99,5 +99,6 @@ export default class TopPage extends Vue {
         .text
             color $white_fff
             background-color $black_000
-            padding 0 6px
+            padding 2px 10px
+            white-space pre
 </style>
