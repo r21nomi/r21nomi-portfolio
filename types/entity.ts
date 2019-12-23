@@ -4,6 +4,7 @@ export interface Work {
     video: string;
     date: string;
     description: string;
+    skill: string;
     link: string;
 }
 

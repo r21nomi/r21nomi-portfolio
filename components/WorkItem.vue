@@ -12,6 +12,8 @@
             <p class="description">
                 {{ work.description }}
             </p>
+            <p class="skill">{{ work.skill }}</p>
+            <p class="date">{{ work.date }}</p>
         </div>
     </div>
 </template>
@@ -50,5 +52,14 @@ export default class WorkItem extends Vue {
 
         .description
             font-size 1.2rem
+            margin-top 4px
+
+        .skill
+            font-size 1.1rem
+            margin-top 4px
+
+        .date
+            font-size 1.1rem
+            color $gray_888
             margin-top 4px
 </style>

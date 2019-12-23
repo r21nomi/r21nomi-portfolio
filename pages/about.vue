@@ -121,7 +121,7 @@ export default class AboutPage extends Vue {
                 margin-top 20px
 
                 th
-                    color #888
+                    color $gray_888
                     font-weight $font_weight_normal
 
                 td
