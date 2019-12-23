@@ -8,15 +8,27 @@
             loop
         ></video>
         <iframe v-else :src="currentArtwork.src"></iframe>
+
+        <div class="titleContainer">
+            <h1 class="title">
+                <TextWithBackground text="Art & Technology" />
+            </h1>
+            <p class="subTitle">
+                <TextWithBackground
+                    text="Create variety of artworks using technology."
+                />
+            </p>
+        </div>
     </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "nuxt-property-decorator";
 import { ArtworkType } from "~/types/entity";
+import TextWithBackground from "~/components/TextWithBackground.vue";
 
 @Component({
-    components: {}
+    components: { TextWithBackground }
 })
 export default class TopPage extends Vue {
     private TIMER_DURATION = 60000;
@@ -62,8 +74,26 @@ export default class TopPage extends Vue {
 </script>
 
 <style scoped lang="stylus">
-iframe, video
-    width 100%
-    height 100%
-    border none
+@require '~@/assets/style/variables'
+
+.topPage
+    iframe, video
+        width 100%
+        height 100%
+        border none
+
+    .titleContainer
+        position absolute
+        top 50%
+        left 50%
+        transform translate(-50%, -50%)
+        text-align center
+
+        .title
+            font-size 3.8rem
+            font-weight $font_weight_black
+
+        .subTitle
+            font-size 1.4rem
+            margin-top 10px
 </style>
