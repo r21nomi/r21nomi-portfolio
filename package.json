@@ -1,7 +1,7 @@
 {
-  "name": "r21nomi-portfolio",
+  "name": "ryotatakemoto.com",
   "version": "1.0.0",
-  "description": "My great Nuxt.js project",
+  "description": "Portfolio site of Ryota Niinomi Takemoto.",
   "author": "r21nomi",
   "private": true,
   "scripts": {
