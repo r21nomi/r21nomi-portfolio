@@ -1,5 +1,6 @@
 const environment = process.env.NODE_ENV || "development";
 const { ENV } = require(`./configs/env.${environment}.js`);
+const isProductionEnv = environment === "production";
 
 export default {
     mode: "universal",
@@ -22,11 +23,21 @@ export default {
     loading: { color: "#fff" },
     css: ["@/assets/style/common.styl"],
     plugins: [],
-    buildModules: ["@nuxtjs/eslint-module", "@nuxt/typescript-build"],
+    buildModules: [
+        "@nuxtjs/eslint-module",
+        "@nuxt/typescript-build",
+        "@nuxtjs/google-analytics"
+    ],
     modules: ["@nuxtjs/axios", "nuxt-webfontloader"],
     webfontloader: {
         google: {
             families: ["Noto+Sans+JP:400,700,900&display=swap&subset=japanese"]
+        }
+    },
+    googleAnalytics: {
+        id: "UA-154958328-1",
+        debug: {
+            sendHitTask: isProductionEnv
         }
     },
     build: {
