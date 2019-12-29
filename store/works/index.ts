@@ -16,7 +16,7 @@ export const state = (): WorksState => ({
             image: "img/aoaza.jpg",
             video: "https://www.youtube.com/watch?v=yJO7UttlhxM",
             date: "2019/10",
-            description: "Visual performance for AOAZA.",
+            description: "Live visual performance for AOAZA.",
             skill: "TouchDesigner",
             link: "https://www.youtube.com/watch?v=yJO7UttlhxM"
         },

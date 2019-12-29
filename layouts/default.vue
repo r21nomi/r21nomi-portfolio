@@ -2,15 +2,17 @@
     <div class="container" :class="{ topPage: isTopPage }">
         <Header />
         <nuxt class="contents" />
+        <Footer v-if="!isTopPage" />
     </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "nuxt-property-decorator";
 import Header from "~/components/Header.vue";
+import Footer from "~/components/Footer.vue";
 
 @Component({
-    components: { Header }
+    components: { Header, Footer }
 })
 export default class extends Vue {
     private get isTopPage(): boolean {
