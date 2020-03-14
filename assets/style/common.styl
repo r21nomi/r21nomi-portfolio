@@ -3,6 +3,12 @@
 html
     font-size 62.5%
     font-family 'Noto Sans JP', sans-serif
+    transition all 100ms ease-in-out
+    opacity 0
+
+    // To avoid text flashing when web font was loaded.
+    &.wf-active
+        opacity 1
 
 body
     font-size: 1.4rem
