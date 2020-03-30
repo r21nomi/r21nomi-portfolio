@@ -4,7 +4,7 @@ export const state = (): WorksState => ({
     private: [
         {
             title: "Daily Creative Coding",
-            image: "img/daily_creative_coding.jpg",
+            image: "/img/daily_creative_coding.jpg",
             video: "",
             date: "2019/09 ~",
             description: "Small digital art pieces I create almost every day.",
@@ -13,7 +13,7 @@ export const state = (): WorksState => ({
         },
         {
             title: "VJ for AOAZA in TECHS",
-            image: "img/aoaza.jpg",
+            image: "/img/aoaza.jpg",
             video: "https://www.youtube.com/watch?v=yJO7UttlhxM",
             date: "2019/10",
             description: "Live visual performance for AOAZA.",
@@ -22,7 +22,7 @@ export const state = (): WorksState => ({
         },
         {
             title: "Webcam Audio Visualizer",
-            image: "img/webcam_audio_visualizer.jpg",
+            image: "/img/webcam_audio_visualizer.jpg",
             video: "",
             date: "2019/09",
             description:
@@ -33,7 +33,7 @@ export const state = (): WorksState => ({
         },
         {
             title: "NEORT",
-            image: "img/neort.jpg",
+            image: "/img/neort.jpg",
             video: "",
             date: "2019/02 ~",
             description:
@@ -43,7 +43,7 @@ export const state = (): WorksState => ({
         },
         {
             title: "Tiny Digital Frame",
-            image: "img/tiny_digital_frame.jpg",
+            image: "/img/tiny_digital_frame.jpg",
             video: "",
             date: "2018/08",
             description:
@@ -53,7 +53,7 @@ export const state = (): WorksState => ({
         },
         {
             title: "PATTERNBRELLA",
-            image: "img/patternbrella.jpg",
+            image: "/img/patternbrella.jpg",
             video: "https://www.youtube.com/watch?v=rXw-gmfmxfM",
             date: "2016/09",
             description:
@@ -63,7 +63,7 @@ export const state = (): WorksState => ({
         },
         {
             title: "Touch The Nature",
-            image: "img/touch_the_nature.jpg",
+            image: "/img/touch_the_nature.jpg",
             video: "https://vimeo.com/162671072",
             date: "2015/08",
             description:
@@ -73,7 +73,7 @@ export const state = (): WorksState => ({
         },
         {
             title: "AWA Android",
-            image: "img/awa.jpg",
+            image: "/img/awa.jpg",
             video: "",
             date: "2015/08 ~ 2018/11",
             description:

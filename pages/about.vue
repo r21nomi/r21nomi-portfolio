@@ -35,12 +35,12 @@
                 <ul class="serviceAccounts">
                     <li class="account github">
                         <a href="https://github.com/r21nomi" target="_blank">
-                            <img src="img/github_icon.png" alt="@r21nomi" />
+                            <img src="/img/github_icon.png" alt="@r21nomi" />
                         </a>
                     </li>
                     <li class="account twitter">
                         <a href="https://twitter.com/r21nomi" target="_blank">
-                            <img src="img/twitter_icon.png" alt="@r21nomi" />
+                            <img src="/img/twitter_icon.png" alt="@r21nomi" />
                         </a>
                     </li>
                     <li class="account facebook">
@@ -49,7 +49,7 @@
                             target="_blank"
                         >
                             <img
-                                src="img/facebook_icon.png"
+                                src="/img/facebook_icon.png"
                                 alt="Ryota Niinomi Takemoto"
                             />
                         </a>
@@ -59,13 +59,13 @@
                             href="https://neort.io/9Bqy2IWae5gAXfMSM4cHStP2dxP2"
                             target="_blank"
                         >
-                            <img src="img/neort_icon.png" alt="r21nomi" />
+                            <img src="/img/neort_icon.png" alt="r21nomi" />
                         </a>
                     </li>
                     <li class="account email">
                         <a href="mailto:r21nomi@gmail.com" target="_blank">
                             <img
-                                src="img/email_icon.png"
+                                src="/img/email_icon.png"
                                 alt="r21nomi@gmail.com"
                             />
                         </a>
