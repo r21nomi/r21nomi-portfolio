@@ -1,11 +1,20 @@
 <template>
     <div class="workItem">
-        <a class="thumb" :href="work.link" target="_blank">
+        <a
+            :class="{ nonClickable: !work.link.url }"
+            class="thumb"
+            :href="work.link.url"
+            :target="target"
+        >
             <img :src="work.image" alt="" />
         </a>
         <div class="infoContainer">
             <p class="title">
-                <a :href="work.link" target="_blank">
+                <a
+                    :class="{ nonClickable: !work.link.url }"
+                    :href="work.link.url"
+                    :target="target"
+                >
                     <TextWithBackground :text="work.title" />
                 </a>
             </p>
@@ -28,6 +37,10 @@ import TextWithBackground from "~/components/TextWithBackground.vue";
 })
 export default class WorkItem extends Vue {
     @Prop({ required: true }) private work!: Work;
+
+    private get target(): string {
+        return this.work.link.isExternal ? "_blank" : "_self";
+    }
 }
 </script>
 
