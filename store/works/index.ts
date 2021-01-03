@@ -12,7 +12,7 @@ export const state = (): WorksState => ({
                 "Artwork series combined digital technology and analog media.",
             skill: "",
             link: {
-                url: "",
+                url: "/works/border",
                 isExternal: false
             }
         },
