@@ -2,9 +2,11 @@
     <div class="borderPage">
         <div class="headerContainer">
             <img :src="work.image" alt="" />
-            <h1 class="title">{{ work.title }}</h1>
-            <p>{{ work.description }}</p>
-            <p class="date">{{ work.date }}</p>
+            <div class="infoContainer">
+                <h1 class="title">{{ work.title }}</h1>
+                <p>{{ work.description }}</p>
+                <p class="date">{{ work.date }}</p>
+            </div>
         </div>
         <div class="contentsContainer">
             <p class="text">
@@ -67,15 +69,19 @@ export default class BorderPage extends Vue {
         img
             width 100%
 
-        .title
-            margin-top 20px
+        .infoContainer
+            padding 0 8px
 
-        .date
-            font-size 1.2rem
-            color $gray_888
-            margin-top 8px
+            .title
+                margin-top 20px
+
+            .date
+                font-size 1.2rem
+                color $gray_888
+                margin-top 8px
 
     .contentsContainer
+        padding 0 8px
         margin-top 50px
 
         .text
