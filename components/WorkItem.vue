@@ -1,13 +1,22 @@
 <template>
     <div class="workItem">
-        <a class="thumb" :href="work.link" target="_blank">
+        <Link
+            :class="{ nonClickable: !work.link.url }"
+            class="thumb"
+            :url="work.link.url"
+            :is-external="work.link.isExternal"
+        >
             <img :src="work.image" alt="" />
-        </a>
+        </Link>
         <div class="infoContainer">
             <p class="title">
-                <a :href="work.link" target="_blank">
+                <Link
+                    :class="{ nonClickable: !work.link.url }"
+                    :url="work.link.url"
+                    :is-external="work.link.isExternal"
+                >
                     <TextWithBackground :text="work.title" />
-                </a>
+                </Link>
             </p>
             <p class="description">
                 {{ work.description }}
@@ -20,14 +29,19 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from "nuxt-property-decorator";
+import Link from "~/components/Link.vue";
 import { Work } from "~/types/entity";
 import TextWithBackground from "~/components/TextWithBackground.vue";
 
 @Component({
-    components: { TextWithBackground }
+    components: { Link, TextWithBackground }
 })
 export default class WorkItem extends Vue {
     @Prop({ required: true }) private work!: Work;
+
+    private get target(): string {
+        return this.work.link.isExternal ? "_blank" : "_self";
+    }
 }
 </script>
 
