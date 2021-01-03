@@ -17,6 +17,19 @@ export const state = (): WorksState => ({
             }
         },
         {
+            id: "private_public",
+            title: "Private Public",
+            image: "/img/private_public.jpg",
+            video: "",
+            date: "2020/02",
+            description: "Installation projected with 8K projector.",
+            skill: "",
+            link: {
+                url: "/works/private_public",
+                isExternal: false
+            }
+        },
+        {
             id: "",
             title: "Daily Creative Coding",
             image: "/img/daily_creative_coding.jpg",
