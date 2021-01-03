@@ -19,7 +19,8 @@ module.exports = {
     // add your custom rules here
     rules: {
         'prettier/prettier': ['error', {
-            'tabWidth': 4
+            'tabWidth': 4,
+            "endOfLine":"auto"
         }]
     }
 }
