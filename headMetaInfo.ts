@@ -7,7 +7,7 @@ export class HeadMetaInfo {
     type: string;
 
     constructor(arg: any = {}) {
-        this.title = arg.title || "ryotatakemoto.com";
+        this.title = arg.title || "Ryota Takemoto";
         this.description =
             arg.description || "Portfolio site of media artist Ryota Takemoto.";
         this.url = arg.url || "https://ryotatakemoto.com/";
