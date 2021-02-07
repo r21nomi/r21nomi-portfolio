@@ -125,21 +125,6 @@ export const state = (): WorksState => ({
                 url: "https://vimeo.com/162671072",
                 isExternal: true
             }
-        },
-        {
-            id: "",
-            title: "AWA Android",
-            image: "/img/awa.jpg",
-            video: "",
-            date: "2015/08 ~ 2018/11",
-            description:
-                "I had been developing Music streaming service 'AWA' as lead Android developer.",
-            skill: "Kotlin / Java",
-            link: {
-                url:
-                    "https://play.google.com/store/apps/details?id=fm.awa.liverpool",
-                isExternal: true
-            }
         }
     ],
     company: []
