@@ -58,6 +58,7 @@ import { Work } from "~/types/entity";
         const _this = this as any;
         return new HeadMetaInfo({
             title: _this.work.title,
+            description: _this.work.description,
             url: `${process.env.BASE_URL}works/private_public`,
             imageUrl: `${process.env.BASE_URL}img/private_public.jpg`
         }).getMeta();
