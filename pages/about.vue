@@ -30,22 +30,16 @@
                             <img src="/img/twitter_icon.png" alt="@r21nomi" />
                         </a>
                     </li>
-                    <li class="account facebook">
+                    <li class="account instagram">
                         <a
-                            href="https://www.facebook.com/r21nomi"
+                            href="https://www.instagram.com/r21nomi"
                             target="_blank"
                         >
-                            <img
-                                src="/img/facebook_icon.png"
-                                alt="Ryota Niinomi Takemoto"
-                            />
+                            <img src="/img/instagram_icon.png" alt="@r21nomi" />
                         </a>
                     </li>
                     <li class="account neort">
-                        <a
-                            href="https://neort.io/9Bqy2IWae5gAXfMSM4cHStP2dxP2"
-                            target="_blank"
-                        >
+                        <a href="https://neort.io/@r21nomi" target="_blank">
                             <img src="/img/neort_icon.png" alt="r21nomi" />
                         </a>
                     </li>
