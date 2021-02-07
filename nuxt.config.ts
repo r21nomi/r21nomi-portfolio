@@ -1,3 +1,5 @@
+import { HeadMetaInfo } from "./headMetaInfo";
+const headMetaInfo = new HeadMetaInfo();
 const environment = process.env.NODE_ENV || "development";
 const { ENV } = require(`./configs/env.${environment}.js`);
 const isProductionEnv = environment === "production";
@@ -5,17 +7,67 @@ const isProductionEnv = environment === "production";
 export default {
     mode: "universal",
     head: {
-        title: process.env.npm_package_name || "",
+        title: headMetaInfo.title,
         meta: [
             { charset: "utf-8" },
             {
                 name: "viewport",
-                content: "width=device-width, initial-scale=1"
+                content:
+                    "width=device-width, initial-scale=1, viewport-fit=cover"
+            },
+            {
+                name: "author",
+                content: "Ryota Takemoto"
+            },
+            {
+                hid: "og:site_name",
+                name: "og:site_name",
+                content: headMetaInfo.title
+            },
+            {
+                hid: "og:title",
+                name: "og:title",
+                content: headMetaInfo.title
+            },
+            {
+                hid: "og:type",
+                name: "og:type",
+                content: headMetaInfo.type
+            },
+            {
+                hid: "og:url",
+                name: "og:url",
+                content: headMetaInfo.url
+            },
+            {
+                hid: "og:image",
+                name: "og:image",
+                content: headMetaInfo.imageUrl
             },
             {
                 hid: "description",
                 name: "description",
-                content: process.env.npm_package_description || ""
+                content: headMetaInfo.description
+            },
+            {
+                hid: "fb:app_id",
+                name: "fb:app_id",
+                content: "1759613840911839"
+            },
+            {
+                hid: "twitter:site",
+                name: "twitter:site",
+                content: "@r21nomi"
+            },
+            {
+                hid: "twitter:card",
+                name: "twitter:card",
+                content: headMetaInfo.twitterCardType
+            },
+            {
+                hid: "twitter:image",
+                name: "twitter:image",
+                content: headMetaInfo.imageUrl
             }
         ],
         link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
