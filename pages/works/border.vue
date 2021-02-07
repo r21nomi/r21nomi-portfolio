@@ -42,10 +42,19 @@
 
 <script lang="ts">
 import { Component, Vue } from "nuxt-property-decorator";
+import { HeadMetaInfo } from "~/headMetaInfo";
 import { Work } from "~/types/entity";
 
 @Component({
-    components: {}
+    components: {},
+    head() {
+        const _this = this as any;
+        return new HeadMetaInfo({
+            title: _this.work.title,
+            url: `${process.env.BASE_URL}works/border`,
+            imageUrl: `${process.env.BASE_URL}img/border_front.jpg`
+        }).getMeta();
+    }
 })
 export default class BorderPage extends Vue {
     private get work(): Work {

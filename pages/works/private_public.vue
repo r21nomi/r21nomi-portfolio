@@ -49,10 +49,19 @@
 
 <script lang="ts">
 import { Component, Vue } from "nuxt-property-decorator";
+import { HeadMetaInfo } from "~/headMetaInfo";
 import { Work } from "~/types/entity";
 
 @Component({
-    components: {}
+    components: {},
+    head() {
+        const _this = this as any;
+        return new HeadMetaInfo({
+            title: _this.work.title,
+            url: `${process.env.BASE_URL}works/private_public`,
+            imageUrl: `${process.env.BASE_URL}img/private_public.jpg`
+        }).getMeta();
+    }
 })
 export default class PrivatePublicPage extends Vue {
     private get work(): Work {
