@@ -7,8 +7,8 @@
                 <img src="/img/profile.jpg" alt="Ryota Niinomi Takemoto" />
             </li>
             <li class="infoContainer">
-                <h2 class="name">Ryota Niinomi Takemoto</h2>
-                <p class="role">Digital Art Creator</p>
+                <h2 class="name">Ryota Takemoto</h2>
+                <p class="role">Media Artist</p>
                 <p class="role2">
                     CEO of
                     <a href="https://neort.io/" target="_blank"
@@ -16,21 +16,8 @@
                     >.
                 </p>
 
-                <table class="skillInfoContainer">
-                    <tr class="outputs">
-                        <th>What I can create:</th>
-                        <td>Installation / Video / Web / App</td>
-                    </tr>
-                    <tr class="skills">
-                        <th>My skills:</th>
-                        <td>
-                            TouchDesigner / GLSL / Javascript / Go / Java /
-                            Kotlin
-                        </td>
-                    </tr>
-                </table>
-
-                <p class="description">{{ description }}</p>
+                <p class="description">{{ descriptionEn }}</p>
+                <p class="description">{{ descriptionJa }}</p>
 
                 <ul class="serviceAccounts">
                     <li class="account github">
@@ -85,8 +72,12 @@ import PageTitle from "~/components/PageTitle.vue";
     components: { PageTitle, TextWithBackground }
 })
 export default class AboutPage extends Vue {
-    private get description(): string {
-        return `I'm a Digital Art Creator who use programming and some creative tools. \nI can create an installation, interactive art and visual related stuff.`;
+    private get descriptionEn(): string {
+        return `Create a video expression using programming combined with analog media.\nI explore a possibility of technology and artistic expression in a daily life.`;
+    }
+
+    private get descriptionJa(): string {
+        return `プログラミングを駆使した映像表現をアナログメディアと組み合わせて行う。\n日常空間における、芸術表現技法としてのテクノロジーの可能性を探求している。`;
     }
 }
 </script>
@@ -116,16 +107,6 @@ export default class AboutPage extends Vue {
 
             .role, .role2
                 margin-top 6px
-
-            .skillInfoContainer
-                margin-top 20px
-
-                th
-                    color $gray_888
-                    font-weight $font_weight_normal
-
-                td
-                    padding-left 10px
 
             .description
                 white-space pre-wrap
