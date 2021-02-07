@@ -8,17 +8,6 @@
             loop
         ></video>
         <iframe v-else :src="currentArtwork.src"></iframe>
-
-        <div class="titleContainer">
-            <h1 class="title">
-                <span class="text">Art & Technology</span>
-            </h1>
-            <p class="subTitle">
-                <span class="text"
-                    >Create variety of artworks using technology.</span
-                >
-            </p>
-        </div>
     </div>
 </template>
 
@@ -80,25 +69,4 @@ export default class TopPage extends Vue {
         width 100%
         height 100%
         border none
-
-    .titleContainer
-        position absolute
-        top 50%
-        left 50%
-        transform translate(-50%, -50%)
-        text-align center
-
-        .title
-            font-size 3.8rem
-            font-weight $font_weight_black
-
-        .subTitle
-            font-size 1.4rem
-            margin-top 10px
-
-        .text
-            color $white_fff
-            background-color $black_000
-            padding 2px 10px
-            white-space pre
 </style>
