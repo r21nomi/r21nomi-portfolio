@@ -3,6 +3,20 @@ import { WorksState } from "~/types/state";
 export const state = (): WorksState => ({
     private: [
         {
+            id: "shikisky",
+            title: "SHIKI SKY",
+            image: "/img/shiki_sky/shiki_sky_1.jpg",
+            video: "",
+            date: "2021/02",
+            description:
+                "SHIKI SKY is a digital canvas displays sky in a room.",
+            skill: "",
+            link: {
+                url: "/works/shikisky",
+                isExternal: false
+            }
+        },
+        {
             id: "borderclock",
             title: "Border Clock",
             image: "/img/border_clock/bc01_1.jpg",
