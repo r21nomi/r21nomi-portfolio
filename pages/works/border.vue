@@ -29,10 +29,6 @@
                 <div><img src="/img/border/border_green.jpg" alt="" /></div>
             </div>
             <video src="/video/border/borders.mp4" controls></video>
-            <div class="imgContainer horizontal">
-                <div><img src="/img/border/border_pixel.jpg" alt="" /></div>
-                <div><img src="/img/border/border_blob.jpg" alt="" /></div>
-            </div>
             <p class="text">
                 Material: display, wood frame, microcomputer
             </p>

@@ -3,6 +3,34 @@ import { WorksState } from "~/types/state";
 export const state = (): WorksState => ({
     private: [
         {
+            id: "shikisky",
+            title: "SHIKI SKY",
+            image: "/img/shiki_sky/shiki_sky_1.jpg",
+            video: "",
+            date: "2021/02",
+            description:
+                "SHIKI SKY is a digital canvas displays sky in a room.",
+            skill: "",
+            link: {
+                url: "/works/shikisky",
+                isExternal: false
+            }
+        },
+        {
+            id: "borderclock",
+            title: "Border Clock",
+            image: "/img/border_clock/bc01_1.jpg",
+            video: "",
+            date: "2021/02",
+            description:
+                "Artwork series combined digital technology and analog media.",
+            skill: "",
+            link: {
+                url: "/works/borderclock",
+                isExternal: false
+            }
+        },
+        {
             id: "border",
             title: "Border Series",
             image: "/img/border_front.jpg",
@@ -13,6 +41,34 @@ export const state = (): WorksState => ({
             skill: "",
             link: {
                 url: "/works/border",
+                isExternal: false
+            }
+        },
+        {
+            id: "border03",
+            title: "Border - Liquid",
+            image: "/img/border_03/b03_1.jpg",
+            video: "",
+            date: "2020/11",
+            description:
+                "Artwork series combined digital technology and analog media.",
+            skill: "",
+            link: {
+                url: "/works/border03",
+                isExternal: false
+            }
+        },
+        {
+            id: "border02",
+            title: "Border - Blob",
+            image: "/img/border_02/b02_1.jpg",
+            video: "",
+            date: "2020/11",
+            description:
+                "Artwork series combined digital technology and analog media.",
+            skill: "",
+            link: {
+                url: "/works/border02",
                 isExternal: false
             }
         },
