@@ -17,6 +17,20 @@ export const state = (): WorksState => ({
             }
         },
         {
+            id: "border02",
+            title: "Border - Blob",
+            image: "/img/border_02/b02_1.jpg",
+            video: "",
+            date: "2020/11",
+            description:
+                "Artwork series combined digital technology and analog media.",
+            skill: "",
+            link: {
+                url: "/works/border02",
+                isExternal: false
+            }
+        },
+        {
             id: "private_public",
             title: "Private Public",
             image: "/img/private_public.jpg",
