@@ -11,20 +11,20 @@
         <div class="contentsContainer">
             <div class="after">
                 <p class="text">
-                    Digital technology penetrate into our daily life and the
-                    border between digital and analog become blurred. However
-                    art with technology often becomes extraordinary thing
-                    separated from daily life.<br />"Border" is an artwork melt
-                    the boundaries between digital and analog by unifying
-                    artwork and a display frame which divides video and real
-                    space.<br />In media art massive installation stands out, I
-                    explored possibility of video as painting displayed in
-                    living space.
+                    A work with a clock motif, derivation work of "Border
+                    series" which melt boundary between digital and analog.<br />
+                    A visual of middle part in arcs mounted concentrically is
+                    gradually animating.<br />
+                    Vivid three arcs are visual accent and also information
+                    represent "hour, minuit, second".<br />
+                    In media arts massive installation stands out, I explored
+                    possibility of video as painting displayed in living space.
                 </p>
                 <p class="text">
-                    今や我々の生活の中には当たり前にデジタルテクノロジーが介入しており、デジタルとアナログの境界は限りなく曖昧になってきている。しかし、テクノロジーがアートと組み合わさるとき、その多くは生活からは切り離された非日常のものとなる。
-                    <br />Borderは映像と実空間を区切るディスプレイのフレームを作品と一体化させることでデジタルとアナログの境界を溶かす作品である。
-                    <br />大規模なインスタレーションが目立つメディアアートの中で、日常の生活空間に飾られる絵画としての映像の可能性を模索した。
+                    デジタルとアナログの境界を溶かす「Borderシリーズ」の派生で、時計をモチーフにした作品。<br />
+                    同心円状に描かれたグラフィックの中で、中心部分のみがゆっくりアニメーションしている。<br />
+                    ビビッドな3本の円弧はビジュアルのアクセントであると共に「時、分、秒」を表す情報でもある。<br />
+                    大規模なインスタレーションが目立つメディアアートの中で、日常の生活空間に飾られる絵画としての映像の可能性を模索した。
                 </p>
             </div>
             <div class="imgContainer horizontal">

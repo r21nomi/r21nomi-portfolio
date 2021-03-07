@@ -13,20 +13,17 @@
                 <div><img src="/img/border_02/b02_2.jpg" alt="" /></div>
                 <div class="after">
                     <p class="text">
-                        Digital technology penetrate into our daily life and the
-                        border between digital and analog become blurred.
-                        However art with technology often becomes extraordinary
-                        thing separated from daily life.<br />"Border" is an
-                        artwork melt the boundaries between digital and analog
-                        by unifying artwork and a display frame which divides
-                        video and real space.<br />In media art massive
-                        installation stands out, I explored possibility of video
-                        as painting displayed in living space.
+                        A 1st work of "Border series" which melt a boundary
+                        between digital and analog.<br />
+                        This concept is enjoy digital artwork in daily living
+                        space.<br />
+                        I aimed new expression with technology by combining a
+                        display and a wood frame and drawing same visual to both
+                        surface.
                     </p>
                     <p class="text">
-                        今や我々の生活の中には当たり前にデジタルテクノロジーが介入しており、デジタルとアナログの境界は限りなく曖昧になってきている。しかし、テクノロジーがアートと組み合わさるとき、その多くは生活からは切り離された非日常のものとなる。
-                        <br />Borderは映像と実空間を区切るディスプレイのフレームを作品と一体化させることでデジタルとアナログの境界を溶かす作品である。
-                        <br />大規模なインスタレーションが目立つメディアアートの中で、日常の生活空間に飾られる絵画としての映像の可能性を模索した。
+                        デジタルとアナログの境界を溶かす「Borderシリーズ」の1作目。<br />
+                        デジタル作品を生活の中で楽しむことをコンセプトにディスプレイとウッドフレームを組み合わせ、その両面に同じビジュアルを描くことでデジタルテクノロジーを駆使した新たな表現を目指した。<br />
                     </p>
                 </div>
             </div>
