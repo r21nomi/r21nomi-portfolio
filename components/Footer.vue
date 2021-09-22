@@ -1,6 +1,6 @@
 <template>
     <div class="footer">
-        <div class="container">© 2021 ryotatakemoto.com</div>
+        <div class="container">© 2021 niinomi.art</div>
     </div>
 </template>
 

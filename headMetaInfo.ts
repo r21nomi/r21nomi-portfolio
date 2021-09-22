@@ -10,8 +10,8 @@ export class HeadMetaInfo {
         this.title = arg.title || "Ryota Takemoto";
         this.description =
             arg.description || "Portfolio site of media artist Ryota Takemoto.";
-        this.url = arg.url || "https://ryotatakemoto.com/";
-        this.imageUrl = arg.imageUrl || "https://ryotatakemoto.com/img/ogp.jpg";
+        this.url = arg.url || "https://niinomi.art/";
+        this.imageUrl = arg.imageUrl || "https://niinomi.art/img/ogp.jpg";
         this.twitterCardType = arg.twitterCardType || "summary_large_image";
         this.type = arg.type || "website";
     }
