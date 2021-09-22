@@ -7,11 +7,11 @@ export class HeadMetaInfo {
     type: string;
 
     constructor(arg: any = {}) {
-        this.title = arg.title || "Ryota Takemoto";
+        this.title = arg.title || "NIINOMI";
         this.description =
-            arg.description || "Portfolio site of media artist Ryota Takemoto.";
-        this.url = arg.url || "https://ryotatakemoto.com/";
-        this.imageUrl = arg.imageUrl || "https://ryotatakemoto.com/img/ogp.jpg";
+            arg.description || "Portfolio site of media artist NIINOMI.";
+        this.url = arg.url || "https://niinomi.art/";
+        this.imageUrl = arg.imageUrl || "https://niinomi.art/img/ogp.jpg";
         this.twitterCardType = arg.twitterCardType || "summary_large_image";
         this.type = arg.type || "website";
     }

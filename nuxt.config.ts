@@ -17,7 +17,7 @@ export default {
             },
             {
                 name: "author",
-                content: "Ryota Takemoto"
+                content: "NIINOMI"
             },
             {
                 hid: "og:site_name",

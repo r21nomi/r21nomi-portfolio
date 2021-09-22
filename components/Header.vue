@@ -2,7 +2,7 @@
     <div class="header">
         <div class="logo">
             <n-link to="/">
-                <img src="/img/icon.png" alt="ryotatakemoto.com" />
+                <img src="/img/icon.png" alt="niinomi.art" />
             </n-link>
         </div>
         <ul class="menu">

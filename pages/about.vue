@@ -4,10 +4,10 @@
 
         <ul class="container">
             <li class="thumb">
-                <img src="/img/profile.jpg" alt="Ryota Niinomi Takemoto" />
+                <img src="/img/profile.jpg" alt="NIINOMI" />
             </li>
             <li class="infoContainer">
-                <h2 class="name">Ryota Takemoto</h2>
+                <h2 class="name">NIINOMI</h2>
                 <p class="role">Media Artist</p>
                 <p class="role2">
                     CEO of
