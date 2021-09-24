@@ -3,6 +3,20 @@ import { WorksState } from "~/types/state";
 export const state = (): WorksState => ({
     private: [
         {
+            id: "borderclocks",
+            title: "Border Clock S series",
+            image: "/img/border_s/borders.jpg",
+            video: "",
+            date: "2021/08",
+            description:
+                "Artwork series combined digital technology and analog media. It visualizes a current time.",
+            skill: "",
+            link: {
+                url: "https://border.niinomi.art",
+                isExternal: true
+            }
+        },
+        {
             id: "shikisky",
             title: "SHIKI SKY",
             image: "/img/shiki_sky/shiki_sky_1.jpg",
