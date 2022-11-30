@@ -26,8 +26,14 @@
                         </a>
                     </li>
                     <li class="account twitter">
-                        <a href="https://twitter.com/r21nomi" target="_blank">
-                            <img src="/img/twitter_icon.png" alt="@r21nomi" />
+                        <a
+                            href="https://twitter.com/r21nomi_px"
+                            target="_blank"
+                        >
+                            <img
+                                src="/img/twitter_icon.png"
+                                alt="@r21nomi_px"
+                            />
                         </a>
                     </li>
                     <li class="account instagram">
