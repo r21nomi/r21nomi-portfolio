@@ -23,9 +23,13 @@ export default class TopPage extends Vue {
     private currentIndex = 0;
     private timer = null;
     private artworks = [
+        // {
+        //     type: ArtworkType.WEB,
+        //     src: "artworks/1/current.html"
+        // },
         {
             type: ArtworkType.WEB,
-            src: "artworks/1/current.html"
+            src: "artworks/2/windows-recomposition.html"
         }
     ];
 
@@ -69,4 +73,5 @@ export default class TopPage extends Vue {
         width 100%
         height 100%
         border none
+        position fixed
 </style>
