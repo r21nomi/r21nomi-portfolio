@@ -3,6 +3,20 @@ import { WorksState } from "~/types/state";
 export const state = (): WorksState => ({
     private: [
         {
+            id: "asystem",
+            title: "A SYSTEM",
+            image: "/img/asystem/asystem.png",
+            video: "",
+            date: "2023/01",
+            description:
+                "A SYSTEM is the project in which the system itself, programmed by NIINOMI, is art.",
+            skill: "",
+            link: {
+                url: "https://asystem.dev",
+                isExternal: true
+            }
+        },
+        {
             id: "borderclocks",
             title: "Border Clock S series",
             image: "/img/border_s/borders.jpg",
