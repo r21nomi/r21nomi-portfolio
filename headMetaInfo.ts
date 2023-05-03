@@ -11,7 +11,7 @@ export class HeadMetaInfo {
         this.description =
             arg.description || "Portfolio site of media artist NIINOMI.";
         this.url = arg.url || "https://niinomi.art/";
-        this.imageUrl = arg.imageUrl || "https://niinomi.art/img/ogp.jpg";
+        this.imageUrl = arg.imageUrl || "https://niinomi.art/img/ogp.png";
         this.twitterCardType = arg.twitterCardType || "summary_large_image";
         this.type = arg.type || "website";
     }
