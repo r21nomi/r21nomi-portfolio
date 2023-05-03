@@ -3,6 +3,36 @@ import { WorksState } from "~/types/state";
 export const state = (): WorksState => ({
     private: [
         {
+            id: "the_dance_of_the_machines",
+            title: "The Dance of the Machines",
+            image:
+                "/img/the_dance_of_the_machines/the_dance_of_the_machines.png",
+            video: "",
+            date: "2023/02",
+            description:
+                "The Dance of the Machines produces animated outputs, in this case, a dance, representing complex, coordinated, and rigorous motions.\nThe Dance of the Machines was part of the Blind Gallery Seed Edition (6th-15th, Feb 2023)\n" +
+                "Learn more at www.BlindGallery.xyz",
+            skill: "",
+            link: {
+                url: "https://www.fxhash.xyz/generative/25103",
+                isExternal: true
+            }
+        },
+        {
+            id: "asystem",
+            title: "A SYSTEM",
+            image: "/img/asystem/asystem.png",
+            video: "",
+            date: "2023/01",
+            description:
+                "A SYSTEM is the project in which the system itself, programmed by NIINOMI, is art.",
+            skill: "",
+            link: {
+                url: "https://asystem.dev",
+                isExternal: true
+            }
+        },
+        {
             id: "borderclocks",
             title: "Border Clock S series",
             image: "/img/border_s/borders.jpg",
