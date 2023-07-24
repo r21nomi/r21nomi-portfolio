@@ -86,12 +86,12 @@ import { Work } from "~/types/entity";
         return new HeadMetaInfo({
             title: _this.work.title,
             description: _this.work.description,
-            url: `${process.env.BASE_URL}works/shikisky`,
-            imageUrl: `${process.env.BASE_URL}img/shiki_sky/shiki_sky_1.jpg`
+            url: `${process.env.BASE_URL}works/connected_windows`,
+            imageUrl: `${process.env.BASE_URL}img/connected_windows/connected_windows.jpg`
         }).getMeta();
     }
 })
-export default class BorderPage extends Vue {
+export default class ConnectedWindowsPage extends Vue {
     private get work(): Work {
         const works: Work[] = this.$store.state.works.private;
         for (let i = 0; i < works.length; i++) {
