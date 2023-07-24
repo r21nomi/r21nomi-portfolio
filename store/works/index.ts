@@ -3,6 +3,20 @@ import { WorksState } from "~/types/state";
 export const state = (): WorksState => ({
     private: [
         {
+            id: "connected_windows",
+            title: "Connected Windows",
+            image: "/img/connected_windows/connected_windows.jpg",
+            video: "",
+            date: "2023/06",
+            description:
+                '"Connected Windows" is an artwork that explores the theme of connections formed through a collection of NFTs, with the motif being computer user interfaces called windows.',
+            skill: "",
+            link: {
+                url: "/works/connected_windows",
+                isExternal: false
+            }
+        },
+        {
             id: "the_dance_of_the_machines",
             title: "The Dance of the Machines",
             image:
