@@ -20,11 +20,6 @@
                 <p class="description">{{ descriptionJa }}</p>
 
                 <ul class="serviceAccounts">
-                    <li class="account github">
-                        <a href="https://github.com/r21nomi" target="_blank">
-                            <img src="/img/github_icon.png" alt="@r21nomi" />
-                        </a>
-                    </li>
                     <li class="account twitter">
                         <a
                             href="https://twitter.com/r21nomi_px"
@@ -42,6 +37,11 @@
                             target="_blank"
                         >
                             <img src="/img/instagram_icon.png" alt="@r21nomi" />
+                        </a>
+                    </li>
+                    <li class="account github">
+                        <a href="https://github.com/r21nomi" target="_blank">
+                            <img src="/img/github_icon.png" alt="@r21nomi" />
                         </a>
                     </li>
                     <li class="account neort">
