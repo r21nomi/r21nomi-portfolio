@@ -3,6 +3,20 @@ import { WorksState } from "~/types/state";
 export const state = (): WorksState => ({
     private: [
         {
+            id: "setup_draw",
+            title: "Setup / Draw",
+            image: "/img/setup_draw/setup_draw.jpg",
+            video: "",
+            date: "2023/06",
+            description:
+                '"Setup / Draw" is an artwork that expresses the beautiful structure of creative coding tool "Processing".',
+            skill: "",
+            link: {
+                url: "/works/setup_draw",
+                isExternal: false
+            }
+        },
+        {
             id: "connected_windows",
             title: "Connected Windows",
             image: "/img/connected_windows/connected_windows.jpg",
