@@ -4,7 +4,7 @@
 
         <ul class="container">
             <li class="thumb">
-                <img src="/img/profile.jpg" alt="NIINOMI" />
+                <img src="/img/icon.png" alt="NIINOMI" />
             </li>
             <li class="infoContainer">
                 <h2 class="name">NIINOMI</h2>
