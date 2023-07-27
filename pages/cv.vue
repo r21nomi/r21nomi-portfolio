@@ -1,6 +1,6 @@
 <template>
-    <div class="aboutPage">
-        <PageTitle title="ABOUT" />
+    <div class="cvPage">
+        <PageTitle title="CV" />
 
         <ul class="container">
             <li class="thumb">
@@ -71,7 +71,7 @@ import PageTitle from "~/components/PageTitle.vue";
 @Component({
     components: { PageTitle, TextWithBackground }
 })
-export default class AboutPage extends Vue {
+export default class CVPage extends Vue {
     private get descriptionEn(): string {
         return `Media Artist / CEO of NEORT, Inc.\nNIINOMI explores the possibilities of new art forms that use digital technology, especially programming.\nIn recent years, he has found aesthetic value in the system itself, which continues to output mechanically through algorithms, and produces works under the theme of "System as an Art".`;
     }
@@ -84,7 +84,7 @@ export default class AboutPage extends Vue {
 
 <style scoped lang="stylus">
 @require '~@/assets/style/variables'
-.aboutPage
+.cvPage
     .container
         padding 20px
         margin-top 20px

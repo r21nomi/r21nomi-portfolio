@@ -12,8 +12,8 @@
                 </n-link>
             </li>
             <li class="menuItem">
-                <n-link to="/about">
-                    <TextWithBackground text="ABOUT" />
+                <n-link to="/cv">
+                    <TextWithBackground text="CV" />
                 </n-link>
             </li>
         </ul>
