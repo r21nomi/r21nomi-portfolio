@@ -2,7 +2,6 @@ import { HeadMetaInfo } from "./headMetaInfo";
 const headMetaInfo = new HeadMetaInfo();
 const environment = process.env.NODE_ENV || "development";
 const { ENV } = require(`./configs/env.${environment}.js`);
-const isProductionEnv = environment === "production";
 
 export default {
     mode: "universal",
@@ -78,7 +77,7 @@ export default {
     buildModules: [
         "@nuxtjs/eslint-module",
         "@nuxt/typescript-build",
-        "@nuxtjs/google-analytics"
+        "@nuxtjs/google-gtag"
     ],
     modules: ["@nuxtjs/axios", "nuxt-webfontloader"],
     webfontloader: {
@@ -86,11 +85,9 @@ export default {
             families: ["Noto+Sans+JP:400,700,900&display=swap&subset=japanese"]
         }
     },
-    googleAnalytics: {
-        id: "UA-154958328-1",
-        debug: {
-            sendHitTask: isProductionEnv
-        }
+    "google-gtag": {
+        id: ENV.GOOGLE_ANALYTICS_ID,
+        debug: false
     },
     build: {
         extend(config: any, ctx: any) {
