@@ -18,5 +18,5 @@ export default class TextWithBackground extends Vue {
 @require '~@/assets/style/variables'
 
 .textWithBackground
-    background linear-gradient(transparent 70%, $accent_yellow 0)
+    background linear-gradient(transparent 70%, $accent_color 0)
 </style>

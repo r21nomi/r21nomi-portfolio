@@ -23,6 +23,7 @@ export default class extends Vue {
 </script>
 
 <style scoped lang="stylus">
+@require '~@/assets/style/variables'
 .container
     .header
         width 100%
