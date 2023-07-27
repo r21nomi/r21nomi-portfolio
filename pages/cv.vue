@@ -1,6 +1,6 @@
 <template>
-    <div class="aboutPage">
-        <PageTitle title="ABOUT" />
+    <div class="cvPage">
+        <PageTitle title="CV" />
 
         <ul class="container">
             <li class="thumb">
@@ -18,6 +18,9 @@
 
                 <p class="description">{{ descriptionEn }}</p>
                 <p class="description">{{ descriptionJa }}</p>
+
+                <div class="sectionTitle">Exhibitions</div>
+                <p class="description exhibitions">{{ exhibitions }}</p>
 
                 <ul class="serviceAccounts">
                     <li class="account twitter">
@@ -71,7 +74,7 @@ import PageTitle from "~/components/PageTitle.vue";
 @Component({
     components: { PageTitle, TextWithBackground }
 })
-export default class AboutPage extends Vue {
+export default class CVPage extends Vue {
     private get descriptionEn(): string {
         return `Media Artist / CEO of NEORT, Inc.\nNIINOMI explores the possibilities of new art forms that use digital technology, especially programming.\nIn recent years, he has found aesthetic value in the system itself, which continues to output mechanically through algorithms, and produces works under the theme of "System as an Art".`;
     }
@@ -79,12 +82,25 @@ export default class AboutPage extends Vue {
     private get descriptionJa(): string {
         return `メディアアーティスト / NEORT株式会社代表。\nプログラムをはじめとするデジタルテクノロジーを駆使した新しいアートの可能性を探求する。\n近年は、アルゴリズムによって機械的に出力をし続けるシステムそのものに美的価値を見出しており、"System as an Art"をテーマに、アートを生成するシステム自体を作品とする活動を行う。`;
     }
+
+    private get exhibitions(): string {
+        return [
+            "2023.06 Processing Community Day Tokyo 2023（Tokyo, 8 / CUBE1,2,3）",
+            "2023.06 Proof of X（Tokyo, THE FACE DAIKANYAMA）",
+            "2023.02 NEW ENERGY（Tokyo, Shinjuku Sumitomo Building）",
+            "2023.01 Made in Contract（Tokyo, NEORT++）",
+            "2022.04 Proof of X（Tokyo, 3331 Arts Chiyoda）",
+            "2021.09 SICF22（Tokyo, Spiral）",
+            "2020.07 おさなごころを、きみに 8K作品上映「MADD.作品集」（Tokyo, Museum of Contemporary Art Tokyo）",
+            "2019.09 HELLO neo SHIBUYA（Tokyo, Shibuya Station East Exit Plaza）"
+        ].join("\n");
+    }
 }
 </script>
 
 <style scoped lang="stylus">
 @require '~@/assets/style/variables'
-.aboutPage
+.cvPage
     .container
         padding 20px
         margin-top 20px
@@ -112,9 +128,16 @@ export default class AboutPage extends Vue {
                 white-space pre-wrap
                 margin-top 20px
 
+            .sectionTitle
+                margin-top 20px
+
+            .exhibitions
+                line-height 2.8rem
+                margin-top 4px
+
             .serviceAccounts
                 display flex
-                margin-top 20px
+                margin-top 80px
 
                 .account
                     a
@@ -141,4 +164,8 @@ export default class AboutPage extends Vue {
 
                     &:nth-child(n + 2)
                         margin-left 14px
+
+        .sectionTitle
+            font-size 1.6rem
+            font-weight bold
 </style>
