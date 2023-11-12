@@ -31,7 +31,7 @@
                 <div><img src="/img/border_clock/bc01_2.jpg" alt="" /></div>
                 <div><img src="/img/border_clock/bc01_3.jpg" alt="" /></div>
             </div>
-            <video src="/video/border_clock/bc01.mp4" controls></video>
+            <Video url="/video/border_clock/bc01.mp4" :show-controls="true" />
             <p class="text">
                 Material: display, wood frame, microcomputer
             </p>
@@ -43,9 +43,10 @@
 import { Component, Vue } from "nuxt-property-decorator";
 import { HeadMetaInfo } from "~/headMetaInfo";
 import { Work } from "~/types/entity";
+import Video from "~/components/Video.vue";
 
 @Component({
-    components: {},
+    components: { Video },
     head() {
         const _this = this as any;
         return new HeadMetaInfo({

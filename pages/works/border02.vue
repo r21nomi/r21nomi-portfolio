@@ -27,7 +27,7 @@
                     </p>
                 </div>
             </div>
-            <video src="/video/border_02/b02.mp4" controls></video>
+            <Video url="/video/border_02/b02.mp4" :show-controls="true" />
             <p class="text">
                 Material: display, wood frame, microcomputer
             </p>
@@ -39,9 +39,10 @@
 import { Component, Vue } from "nuxt-property-decorator";
 import { HeadMetaInfo } from "~/headMetaInfo";
 import { Work } from "~/types/entity";
+import Video from "~/components/Video.vue";
 
 @Component({
-    components: {},
+    components: { Video },
     head() {
         const _this = this as any;
         return new HeadMetaInfo({
