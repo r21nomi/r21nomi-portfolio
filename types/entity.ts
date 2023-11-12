@@ -18,3 +18,9 @@ export enum ArtworkType {
     WEB = "web",
     VIDEO = "video"
 }
+
+export enum Color {
+    BLACK = "black",
+    WHITE = "white",
+    ACCENT = "accent"
+}
