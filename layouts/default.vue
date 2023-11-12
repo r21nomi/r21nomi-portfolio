@@ -1,8 +1,8 @@
 <template>
-    <div class="container" :class="{ topPage: isTopPage }">
-        <Header />
+    <div class="container" :class="{ topPage: isTopPage, print: isPrintMode }">
+        <Header v-if="!isPrintMode" />
         <nuxt class="contents" />
-        <Footer v-if="!isTopPage" />
+        <Footer v-if="!isTopPage && !isPrintMode" />
     </div>
 </template>
 
@@ -10,6 +10,7 @@
 import { Component, Vue } from "nuxt-property-decorator";
 import Header from "~/components/Header.vue";
 import Footer from "~/components/Footer.vue";
+import { urlUtil } from "~/util/urlUtil";
 
 @Component({
     middleware: ["redirect"],
@@ -18,6 +19,10 @@ import Footer from "~/components/Footer.vue";
 export default class extends Vue {
     private get isTopPage(): boolean {
         return this.$route.name === "index";
+    }
+
+    private get isPrintMode(): boolean {
+        return urlUtil.isPrintMode();
     }
 }
 </script>
@@ -44,4 +49,8 @@ export default class extends Vue {
             margin 0
             padding 0
             z-index -1
+
+    &.print
+        .contents
+            margin-top 0
 </style>

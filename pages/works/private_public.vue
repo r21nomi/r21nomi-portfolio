@@ -36,10 +36,10 @@
                 <div><img src="/img/private_public/4.jpg" alt="" /></div>
                 <div><img src="/img/private_public/5.jpg" alt="" /></div>
             </div>
-            <video
-                src="/video/private_public/private_public.mp4"
-                controls
-            ></video>
+            <Video
+                url="/video/private_public/private_public.mp4"
+                :show-controls="true"
+            />
             <p class="text">
                 Material: 8K projector, PC
             </p>
@@ -51,9 +51,10 @@
 import { Component, Vue } from "nuxt-property-decorator";
 import { HeadMetaInfo } from "~/headMetaInfo";
 import { Work } from "~/types/entity";
+import Video from "~/components/Video.vue";
 
 @Component({
-    components: {},
+    components: { Video },
     head() {
         const _this = this as any;
         return new HeadMetaInfo({

@@ -22,7 +22,10 @@
                 "Setup /
                 Draw"はクリエイティブコーディングのためのツール"Processing"の美しい構造を可視化した作品です。シンプルでありながら多彩な表現が生み出される、その構造自体がアートと言えるでしょう。
             </p>
-            <video src="/video/setup_draw/setup_draw.mp4" controls></video>
+            <Video
+                url="/video/setup_draw/setup_draw.mp4"
+                :show-controls="true"
+            />
             <p class="text">
                 Material: displays, microcomputers
             </p>
@@ -52,9 +55,10 @@ import { Component, Vue } from "nuxt-property-decorator";
 import TextWithBackground from "~/components/TextWithBackground.vue";
 import { HeadMetaInfo } from "~/headMetaInfo";
 import { Work } from "~/types/entity";
+import Video from "~/components/Video.vue";
 
 @Component({
-    components: { TextWithBackground },
+    components: { Video, TextWithBackground },
     head() {
         const _this = this as any;
         return new HeadMetaInfo({

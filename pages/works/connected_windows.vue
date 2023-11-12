@@ -31,10 +31,10 @@
                 Windows"は、NFTのコレクションを介して形成される繋がりをテーマにした作品で、そのモチーフはコンピューターのユーザーインターフェースであるウィンドウです。このコレクションにはANIMAと呼ばれるデジタル世界の生き物が存在し、コレクション内で生成されたNFTのウィンドウ間を行き来します。コレクションに所有者が増えるにつれ、ANIMAがひとつのウィンドウに留まる時間は短くなり、画面にはウィンドウのみが残されます。コンピューターのウィンドウは情報を表示するためのインターフェースですが、"Connected
                 Windows"においてはANIMAが訪れるための場所でもあります。NFTコレクションにおいて1エディションを所有することは他の所有者との緩やかな繋がりの形成を意味します。本コレクションの所有者になることはANIMAを共有する一員になることであり、そのウィンドウに現れるANIMAの来訪は緩やかな繋がりの形成の証なのです。
             </p>
-            <video
-                src="/video/connected_windows/connected_windows.mp4"
-                controls
-            ></video>
+            <Video
+                url="/video/connected_windows/connected_windows.mp4"
+                :show-controls="true"
+            />
             <p class="text">
                 Material: displays, microcomputers, pipes, concrete blocks
             </p>
@@ -78,9 +78,10 @@ import { Component, Vue } from "nuxt-property-decorator";
 import TextWithBackground from "~/components/TextWithBackground.vue";
 import { HeadMetaInfo } from "~/headMetaInfo";
 import { Work } from "~/types/entity";
+import Video from "~/components/Video.vue";
 
 @Component({
-    components: { TextWithBackground },
+    components: { Video, TextWithBackground },
     head() {
         const _this = this as any;
         return new HeadMetaInfo({
