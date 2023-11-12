@@ -5,8 +5,8 @@
   "author": "r21nomi",
   "private": true,
   "scripts": {
-    "dev": "nuxt-ts",
-    "build": "nuxt-ts build",
+    "dev": "NODE_OPTIONS='--openssl-legacy-provider' nuxt-ts",
+    "build": "NODE_OPTIONS='--openssl-legacy-provider' nuxt-ts build",
     "start": "nuxt-ts start",
     "generate": "nuxt-ts generate",
     "lint": "eslint --ext .js,.ts,.vue --ignore-path .gitignore .",
@@ -34,5 +34,8 @@
     "prettier": "^1.19.1",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2"
+  },
+  "volta": {
+    "node": "18.17.0"
   }
 }
