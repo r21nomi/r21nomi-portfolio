@@ -3,6 +3,20 @@ import { WorksState } from "~/types/state";
 export const state = (): WorksState => ({
     private: [
         {
+            id: "unfinished_portrait",
+            title: "Unfinished Portrait",
+            image: "/img/unfinished_portrait/unfinished_portrait.jpg",
+            video: "",
+            date: "2023/10",
+            description:
+                "Unfinished Portrait is a new portrait that will never be completed, and will continue to be painted by a computer system.",
+            skill: "",
+            link: {
+                url: "/works/unfinished_portrait",
+                isExternal: false
+            }
+        },
+        {
             id: "setup_draw",
             title: "Setup / Draw",
             image: "/img/setup_draw/setup_draw.jpg",
