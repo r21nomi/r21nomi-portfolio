@@ -31,3 +31,13 @@ overflowYScroll()
 buttonDisabled()
   opacity 0.75
   pointer-events none
+
+$MediaSP = 767
+
+pc()
+  @media screen and (min-width unit($MediaSP + 1 , "px"))
+    {block}
+
+sp()
+  @media screen and (max-width unit($MediaSP , "px"))
+    {block}
