@@ -3,6 +3,20 @@ import { WorksState } from "~/types/state";
 export const state = (): WorksState => ({
     private: [
         {
+            id: "the_shape_of_time",
+            title: "The Shape of Time",
+            image: "/img/the_shape_of_time/the_shape_of_time.jpg",
+            video: "",
+            date: "2023/11",
+            description:
+                '"The Shape of Time" is a work reconstructed as a sculpture by recapturing the characteristics of the display media.',
+            skill: "",
+            link: {
+                url: "/works/the_shape_of_time",
+                isExternal: false
+            }
+        },
+        {
             id: "unfinished_portrait",
             title: "Unfinished Portrait",
             image: "/img/unfinished_portrait/unfinished_portrait.jpg",
