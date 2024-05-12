@@ -85,6 +85,8 @@ export default class CVPage extends Vue {
 
     private get exhibitions(): string {
         return [
+            "2024.04 Bright Moments 'The Finale' (Venice, Italy)",
+            "2024.01 Proof of X (Tokyo, GALLERY X BY PARCO)",
             "2023.10 MEET YOUR ART FESTIVAL 2023（Tokyo, Tennoze area）",
             "2023.09 art stage OSAKA（Osaka, Grand Cube Osaka）",
             "2023.06 Processing Community Day Tokyo 2023（Tokyo, 8 / CUBE1,2,3）",
