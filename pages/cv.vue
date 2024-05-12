@@ -11,8 +11,8 @@
                 <p class="role">Media Artist</p>
                 <p class="role2">
                     CEO of
-                    <a href="https://neort.io/" target="_blank"
-                        ><TextWithBackground text="NEORT"/></a
+                    <a href="https://neort.io/" target="_blank">
+                        <TextWithBackground text="NEORT" /> </a
                     >.
                 </p>
 
@@ -53,10 +53,10 @@
                         </a>
                     </li>
                     <li class="account email">
-                        <a href="mailto:r21nomi@gmail.com" target="_blank">
+                        <a href="mailto:info@niinomi.art" target="_blank">
                             <img
                                 src="/img/email_icon.png"
-                                alt="r21nomi@gmail.com"
+                                alt="info@niinomi.art"
                             />
                         </a>
                     </li>
