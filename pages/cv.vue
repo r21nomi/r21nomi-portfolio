@@ -11,8 +11,8 @@
                 <p class="role">Media Artist</p>
                 <p class="role2">
                     CEO of
-                    <a href="https://neort.io/" target="_blank"
-                        ><TextWithBackground text="NEORT"/></a
+                    <a href="https://neort.io/" target="_blank">
+                        <TextWithBackground text="NEORT" /> </a
                     >.
                 </p>
 
@@ -53,10 +53,10 @@
                         </a>
                     </li>
                     <li class="account email">
-                        <a href="mailto:r21nomi@gmail.com" target="_blank">
+                        <a href="mailto:info@niinomi.art" target="_blank">
                             <img
                                 src="/img/email_icon.png"
-                                alt="r21nomi@gmail.com"
+                                alt="info@niinomi.art"
                             />
                         </a>
                     </li>
@@ -76,15 +76,17 @@ import PageTitle from "~/components/PageTitle.vue";
 })
 export default class CVPage extends Vue {
     private get descriptionEn(): string {
-        return `Media Artist / CEO of NEORT, Inc.\nNIINOMI explores the possibilities of new art forms that use digital technology, especially programming.\nIn recent years, he has found aesthetic value in the system itself, which continues to output mechanically through algorithms, and produces works under the theme of "System as an Art".`;
+        return `Media Artist / CEO of NEORT, Inc.\nNIINOMI explores the possibilities of new art forms using a computer technology, especially programming.\nIn recent years, he has found aesthetic value in the system itself, which continues to output mechanically through algorithms, and produces works under the theme of "System as an Art".`;
     }
 
     private get descriptionJa(): string {
-        return `メディアアーティスト / NEORT株式会社代表。\nプログラムをはじめとするデジタルテクノロジーを駆使した新しいアートの可能性を探求する。\n近年は、アルゴリズムによって機械的に出力をし続けるシステムそのものに美的価値を見出しており、"System as an Art"をテーマに、アートを生成するシステム自体を作品とする活動を行う。`;
+        return `メディアアーティスト / NEORT株式会社代表。\nプログラムをはじめとするコンピューターテクノロジーを駆使した新しいアートの可能性を探求する。\n近年は、アルゴリズムによって機械的に出力をし続けるシステムそのものに美的価値を見出しており、"System as an Art"をテーマに、アートを生成するシステム自体を作品とする活動を行う。`;
     }
 
     private get exhibitions(): string {
         return [
+            "2024.04 Bright Moments 'The Finale' (Venice, Italy)",
+            "2024.01 Proof of X (Tokyo, GALLERY X BY PARCO)",
             "2023.10 MEET YOUR ART FESTIVAL 2023（Tokyo, Tennoze area）",
             "2023.09 art stage OSAKA（Osaka, Grand Cube Osaka）",
             "2023.06 Processing Community Day Tokyo 2023（Tokyo, 8 / CUBE1,2,3）",
