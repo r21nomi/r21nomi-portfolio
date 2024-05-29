@@ -3,6 +3,20 @@ import { WorksState } from "~/types/state";
 export const state = (): WorksState => ({
     private: [
         {
+            id: "emaki",
+            title: "EMAKI",
+            image: "/img/emaki/emaki.jpg",
+            video: "",
+            date: "2024/04",
+            description:
+                '"EMAKI" is the collaboration work between NIINOMI and A-Mashiro created for Bright Moments Finale.',
+            skill: "",
+            link: {
+                url: "/works/emaki",
+                isExternal: false
+            }
+        },
+        {
             id: "the_shape_of_time",
             title: "The Shape of Time",
             image: "/img/the_shape_of_time/the_shape_of_time.jpg",
