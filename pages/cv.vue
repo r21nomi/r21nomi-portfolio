@@ -76,15 +76,16 @@ import PageTitle from "~/components/PageTitle.vue";
 })
 export default class CVPage extends Vue {
     private get descriptionEn(): string {
-        return `Media Artist / CEO of NEORT, Inc.\nNIINOMI explores the possibilities of new art forms using a computer technology, especially programming.\nIn recent years, he has found aesthetic value in the system itself, which continues to output mechanically through algorithms, and produces works under the theme of "System as an Art".`;
+        return `Media Artist / Director of NEORT, Inc.\nNIINOMI explores the possibilities of new art forms using a computer technology, especially programming.\nIn recent years, he has found aesthetic value in the system itself, which continues to output mechanically through algorithms, and produces works under the theme of "System as an Art".`;
     }
 
     private get descriptionJa(): string {
-        return `メディアアーティスト / NEORT株式会社代表。\nプログラムをはじめとするコンピューターテクノロジーを駆使した新しいアートの可能性を探求する。\n近年は、アルゴリズムによって機械的に出力をし続けるシステムそのものに美的価値を見出しており、"System as an Art"をテーマに、アートを生成するシステム自体を作品とする活動を行う。`;
+        return `メディアアーティスト / NEORT株式会社ディレクター。\nプログラムをはじめとするコンピューターテクノロジーを駆使した新しいアートの可能性を探求する。\n近年は、アルゴリズムによって機械的に出力をし続けるシステムそのものに美的価値を見出しており、"System as an Art"をテーマに、アートを生成するシステム自体を作品とする活動を行う。`;
     }
 
     private get exhibitions(): string {
         return [
+            "2024.04 kazunomi one-day-only Berlin (Berlin, Germany)",
             "2024.04 Bright Moments 'The Finale' (Venice, Italy)",
             "2024.01 Proof of X (Tokyo, GALLERY X BY PARCO)",
             "2023.10 MEET YOUR ART FESTIVAL 2023（Tokyo, Tennoze area）",
