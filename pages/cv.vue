@@ -10,7 +10,7 @@
                 <h2 class="name">NIINOMI</h2>
                 <p class="role">Media Artist</p>
                 <p class="role2">
-                    CEO of
+                    Director of
                     <a href="https://neort.io/" target="_blank">
                         <TextWithBackground text="NEORT" /> </a
                     >.
