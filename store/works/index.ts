@@ -3,6 +3,34 @@ import { WorksState } from "~/types/state";
 export const state = (): WorksState => ({
     private: [
         {
+            id: "breath_of_the_sea",
+            title: "Breath of the Sea",
+            image: "/img/breath_of_the_sea/breath_of_the_sea.jpg",
+            video: "",
+            date: "2024/11",
+            description:
+                "stream the wave sound and making the sea in the city wavy.",
+            skill: "",
+            link: {
+                url: "/works/breath_of_the_sea",
+                isExternal: false
+            }
+        },
+        {
+            id: "computer",
+            title: "Computer",
+            image: "/img/computer/computers.jpg",
+            video: "",
+            date: "2024/10",
+            description:
+                "By dismantling and sensitively rearranging the components that make up the computer, this work expresses the inherent roughness and sensitivity of the computer while exposing its inherent logical aspects.",
+            skill: "",
+            link: {
+                url: "/works/computer",
+                isExternal: false
+            }
+        },
+        {
             id: "emaki",
             title: "EMAKI",
             image: "/img/emaki/emaki.jpg",

@@ -85,6 +85,8 @@ export default class CVPage extends Vue {
 
     private get exhibitions(): string {
         return [
+            "2024.11 ATAMI ART GRANT 2024 超（Shizuoka, Atami city）",
+            "2024.10 MEET YOUR ART FESTIVAL 2024（Tokyo, Tennoze area）",
             "2024.04 kazunomi one-day-only Berlin (Berlin, Germany)",
             "2024.04 Bright Moments 'The Finale' (Venice, Italy)",
             "2024.01 Proof of X (Tokyo, GALLERY X BY PARCO)",

@@ -1,6 +1,6 @@
 <template>
     <div class="footer">
-        <div class="container">© 2023 niinomi.art</div>
+        <div class="container">© {{ year }} niinomi.art</div>
     </div>
 </template>
 
@@ -11,7 +11,11 @@ import TextWithBackground from "~/components/TextWithBackground.vue";
 @Component({
     components: { TextWithBackground }
 })
-export default class Footer extends Vue {}
+export default class Footer extends Vue {
+    private get year(): number {
+        return new Date().getFullYear();
+    }
+}
 </script>
 
 <style scoped lang="stylus">
