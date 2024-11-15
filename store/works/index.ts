@@ -3,6 +3,20 @@ import { WorksState } from "~/types/state";
 export const state = (): WorksState => ({
     private: [
         {
+            id: "breath_of_the_sea",
+            title: "Breath of the Sea",
+            image: "/img/breath_of_the_sea/breath_of_the_sea.jpg",
+            video: "",
+            date: "2024/11",
+            description:
+                "stream the wave sound and making the sea in the city wavy.",
+            skill: "",
+            link: {
+                url: "/works/breath_of_the_sea",
+                isExternal: false
+            }
+        },
+        {
             id: "computer",
             title: "Computer",
             image: "/img/computer/computers.jpg",
