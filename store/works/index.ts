@@ -3,6 +3,20 @@ import { WorksState } from "~/types/state";
 export const state = (): WorksState => ({
     private: [
         {
+            id: "computer",
+            title: "Computer",
+            image: "/img/computer/computers.jpg",
+            video: "",
+            date: "2024/10",
+            description:
+                "By dismantling and sensitively rearranging the components that make up the computer, this work expresses the inherent roughness and sensitivity of the computer while exposing its inherent logical aspects.",
+            skill: "",
+            link: {
+                url: "/works/computer",
+                isExternal: false
+            }
+        },
+        {
             id: "emaki",
             title: "EMAKI",
             image: "/img/emaki/emaki.jpg",
