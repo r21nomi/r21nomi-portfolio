@@ -15,22 +15,28 @@
                 the sea is a living, breathing organism. In this work, the sea
                 appears in a corner of the city of Atami and continues to exist
                 in the space as an organic being that breathes in the same way
-                that people do. The breath (sound of waves) of the sea, a symbol
-                of Atami, is captured in real time and appears as a digital sea
-                in the exhibition space in the city. The electronic sea depicted
-                in front of our eyes is a proof of the sea's life activity that
-                is breathing at this very moment.
+                that people do. The breath of the sea (the sound of waves), a
+                symbol of Atami, is captured in real time on the seashore and
+                reflected in the artworks exhibited in the city. It appears as a
+                digital sea in the city of Atami. The electronic sea depicted in
+                front of our eyes is a proof of the sea's life activity that is
+                breathing at this very moment.
             </p>
             <p class="text">
                 波は呼吸のようだ。一定のリズムで寄せては返すを繰り返し、その動きは有機的な生命を感じさせる。まるで海が呼吸する生き物のようである。
                 本作は、熱海の街の一角に海を出現させ、それを人の営みと同様に呼吸する有機的な存在として空間に存在させ続ける作品である。
-                熱海の象徴である海の呼吸（波の音）をリアルタイムで収音し、街中の展示空間にデジタルの海として現れる。
+                熱海の象徴である海の呼吸（波の音）を海辺でリアルタイムで収音し、街中で展示されている作品に反映。熱海の街にデジタルの海として現れる。
                 目の前で描かれる電子の海は、今この瞬間に息をしている海の生命活動の証である。
             </p>
             <p class="text">
                 Material: Monitor, Raspberry Pi, Pipes / Microphone, Raspberry
                 Pi, Monitor, Pipes, Wood board
             </p>
+            <div class="figureContainer">
+                <div class="imgItem">
+                    <img src="/img/breath_of_the_sea/stream.jpg" />
+                </div>
+            </div>
             <div class="exhibitionContainer">
                 <div class="imgContainer">
                     <div class="imgItem">
@@ -134,6 +140,12 @@ export default class BreathOfTheSeaPage extends Vue {
             &:first-child
                 margin-top 0
 
+        .figureContainer
+            margin-top 64px
+
+            img
+                width 100%
+
         .exhibitionContainer
             margin-top 64px
 
@@ -152,6 +164,9 @@ export default class BreathOfTheSeaPage extends Vue {
 
     +sp()
         .contentsContainer
+            .figureContainer
+                margin-top 32px
+
             .exhibitionContainer
                 margin-top 32px
 
