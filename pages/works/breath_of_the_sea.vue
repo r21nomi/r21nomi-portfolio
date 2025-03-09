@@ -50,6 +50,14 @@
                         />
                     </div>
                 </div>
+                <div class="imgContainer">
+                    <div class="imgItem">
+                        <img src="/img/breath_of_the_sea/beach_1.jpg" />
+                    </div>
+                    <div class="imgItem">
+                        <img src="/img/breath_of_the_sea/beach_2.jpg" />
+                    </div>
+                </div>
                 <div class="videoContainer">
                     <div class="videoItem">
                         <Video
@@ -158,6 +166,10 @@ export default class BreathOfTheSeaPage extends Vue {
                         width 100%
                         height 100%
                         object-fit cover
+
+            .imgContainer
+                &:nth-child(n + 2)
+                    margin-top 4px
 
             .videoContainer
                 margin-top 4px
