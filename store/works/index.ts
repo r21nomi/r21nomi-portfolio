@@ -242,19 +242,6 @@ export const state = (): WorksState => ({
         },
         {
             id: "",
-            title: "VJ for AOAZA in TECHS",
-            image: "/img/aoaza.jpg",
-            video: "https://www.youtube.com/watch?v=yJO7UttlhxM",
-            date: "2019/10",
-            description: "Live visual performance for AOAZA.",
-            skill: "TouchDesigner",
-            link: {
-                url: "https://www.youtube.com/watch?v=yJO7UttlhxM",
-                isExternal: true
-            }
-        },
-        {
-            id: "",
             title: "Webcam Audio Visualizer",
             image: "/img/webcam_audio_visualizer.jpg",
             video: "",
@@ -293,20 +280,6 @@ export const state = (): WorksState => ({
             skill: "Raspberry PI / node.js",
             link: {
                 url: "",
-                isExternal: true
-            }
-        },
-        {
-            id: "",
-            title: "PATTERNBRELLA",
-            image: "/img/patternbrella.jpg",
-            video: "https://www.youtube.com/watch?v=rXw-gmfmxfM",
-            date: "2016/09",
-            description:
-                "A presentation of new umbrella to make people happy in rainy situation. This is the artwork of BaPA 3rd.",
-            skill: "openFrameworks / Java",
-            link: {
-                url: "https://www.youtube.com/watch?v=rXw-gmfmxfM",
                 isExternal: true
             }
         },
