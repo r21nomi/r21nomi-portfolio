@@ -4,10 +4,10 @@
 
         <ul class="container">
             <li class="thumb">
-                <img src="/img/icon.png" alt="NIINOMI" />
+                <img src="/img/icon.png" alt="Ryota Niinomi" />
             </li>
             <li class="infoContainer">
-                <h2 class="name">NIINOMI</h2>
+                <h2 class="name">Ryota Niinomi</h2>
                 <p class="role">Media Artist</p>
                 <p class="role2">
                     Director of
@@ -76,11 +76,11 @@ import PageTitle from "~/components/PageTitle.vue";
 })
 export default class CVPage extends Vue {
     private get descriptionEn(): string {
-        return `Media Artist / Director of NEORT, Inc.\nNIINOMI explores the possibilities of new art forms using a computer technology, especially programming.\nIn recent years, he has found aesthetic value in the system itself, which continues to output mechanically through algorithms, and produces works under the theme of "System as an Art".`;
+        return `Media Artist / Director of NEORT, Inc.\nNiinomi explores the possibilities of new art forms using a computer technology, especially programming.\nIn recent years, he has found aesthetic value in the system itself, which continues to output mechanically through algorithms, and produces works under the theme of "System as Art".`;
     }
 
     private get descriptionJa(): string {
-        return `メディアアーティスト / NEORT株式会社ディレクター。\nプログラムをはじめとするコンピューターテクノロジーを駆使した新しいアートの可能性を探求する。\n近年は、アルゴリズムによって機械的に出力をし続けるシステムそのものに美的価値を見出しており、"System as an Art"をテーマに、アートを生成するシステム自体を作品とする活動を行う。`;
+        return `メディアアーティスト / NEORT株式会社ディレクター。\nプログラムをはじめとするコンピューターテクノロジーを駆使した新しいアートの可能性を探求する。\n近年は、アルゴリズムによって機械的に出力をし続けるシステムそのものに美的価値を見出しており、"System as Art"をテーマに、アートを生成するシステム自体を作品とする活動を行う。`;
     }
 
     private get exhibitions(): string {

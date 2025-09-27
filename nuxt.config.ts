@@ -16,7 +16,7 @@ export default {
             },
             {
                 name: "author",
-                content: "NIINOMI"
+                content: "Ryota Niinomi"
             },
             {
                 hid: "og:site_name",
