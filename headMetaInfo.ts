@@ -7,9 +7,9 @@ export class HeadMetaInfo {
     type: string;
 
     constructor(arg: any = {}) {
-        this.title = arg.title || "NIINOMI";
+        this.title = arg.title || "Ryota Niinomi";
         this.description =
-            arg.description || "Portfolio site of media artist NIINOMI.";
+            arg.description || "Portfolio site of media artist Ryota Niinomi.";
         this.url = arg.url || "https://niinomi.art/";
         this.imageUrl = arg.imageUrl || "https://niinomi.art/img/ogp.png";
         this.twitterCardType = arg.twitterCardType || "summary_large_image";

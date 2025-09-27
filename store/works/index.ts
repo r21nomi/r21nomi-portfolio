@@ -37,7 +37,7 @@ export const state = (): WorksState => ({
             video: "",
             date: "2024/04",
             description:
-                '"EMAKI" is the collaboration work between NIINOMI and A-Mashiro created for Bright Moments Finale.',
+                '"EMAKI" is the collaboration work between Ryota Niinomi and A-Mashiro created for Bright Moments Finale.',
             skill: "",
             link: {
                 url: "/works/emaki",
@@ -123,7 +123,7 @@ export const state = (): WorksState => ({
             video: "",
             date: "2023/01",
             description:
-                "A SYSTEM is the project in which the system itself, programmed by NIINOMI, is art.",
+                "A SYSTEM is the project in which the system itself, programmed by Ryota Niinomi, is art.",
             skill: "",
             link: {
                 url: "https://asystem.dev",

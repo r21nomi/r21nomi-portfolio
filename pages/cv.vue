@@ -4,10 +4,10 @@
 
         <ul class="container">
             <li class="thumb">
-                <img src="/img/icon.png" alt="NIINOMI" />
+                <img src="/img/icon.png" alt="Ryota Niinomi" />
             </li>
             <li class="infoContainer">
-                <h2 class="name">NIINOMI</h2>
+                <h2 class="name">Ryota Niinomi</h2>
                 <p class="role">Media Artist</p>
                 <p class="role2">
                     Director of
@@ -76,7 +76,7 @@ import PageTitle from "~/components/PageTitle.vue";
 })
 export default class CVPage extends Vue {
     private get descriptionEn(): string {
-        return `Media Artist / Director of NEORT, Inc.\nNIINOMI explores the possibilities of new art forms using a computer technology, especially programming.\nIn recent years, he has found aesthetic value in the system itself, which continues to output mechanically through algorithms, and produces works under the theme of "System as an Art".`;
+        return `Media Artist / Director of NEORT, Inc.\nNiinomi explores the possibilities of new art forms using a computer technology, especially programming.\nIn recent years, he has found aesthetic value in the system itself, which continues to output mechanically through algorithms, and produces works under the theme of "System as an Art".`;
     }
 
     private get descriptionJa(): string {
