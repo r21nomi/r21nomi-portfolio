@@ -3,6 +3,20 @@ import { WorksState } from "~/types/state";
 export const state = (): WorksState => ({
     private: [
         {
+            id: "manustructure",
+            title: "Manustructure",
+            image: "/img/manustructure/img1_16_9.jpg",
+            video: "",
+            date: "2025/10",
+            description:
+                "Manustructure is a work that depicts the structure of the production system itself by shining light on machines operating in a factory and casting their shadows onto a support.",
+            skill: "",
+            link: {
+                url: "/works/manustructure",
+                isExternal: false
+            }
+        },
+        {
             id: "breath_of_the_sea",
             title: "Breath of the Sea",
             image: "/img/breath_of_the_sea/breath_of_the_sea.jpg",
