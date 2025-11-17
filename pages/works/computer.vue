@@ -23,6 +23,19 @@
                 monitor
             </p>
             <div class="exhibitionContainer">
+                <div class="imgContainer">
+                    <div class="imgItem">
+                        <img src="/img/computer/computers_1.jpg" />
+                    </div>
+                    <div class="imgItem">
+                        <img src="/img/computer/computers_2.jpg" />
+                    </div>
+                </div>
+                <div class="imgContainer">
+                    <div class="imgItem">
+                        <img src="/img/computer/computers_3.jpg" />
+                    </div>
+                </div>
                 <Video
                     url="/video/computer/computer.mp4"
                     :show-controls="true"
@@ -113,6 +126,10 @@ export default class ComputerPage extends Vue {
         .exhibitionContainer
             margin-top 64px
 
+            .imgContainer, .videoContainer
+                display flex
+                gap 4px
+
             .video
                 width 50%
 
@@ -120,6 +137,9 @@ export default class ComputerPage extends Vue {
         .contentsContainer
             .exhibitionContainer
                 margin-top 32px
+
+                .imgContainer, .videoContainer
+                    flex-direction column
 
                 .video
                     width 100%
