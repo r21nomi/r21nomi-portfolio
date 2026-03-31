@@ -85,6 +85,7 @@ export default class CVPage extends Vue {
 
     private get exhibitions(): string {
         return [
+            "2025.10 FactorISM ART AWARD 2025（Osaka, Yoshikawa Ironworks）",
             "2024.11 ATAMI ART GRANT 2024 超（Shizuoka, Atami city）",
             "2024.10 MEET YOUR ART FESTIVAL 2024（Tokyo, Tennoze area）",
             "2024.04 kazunomi one-day-only Berlin (Berlin, Germany)",
